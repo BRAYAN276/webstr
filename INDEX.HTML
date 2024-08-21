@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEUT-28:8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DEUT-28:8</h1>
+        <div class="button-container">
+            <button id="show-plates-btn" class="show">Todas</button>
+            <button id="save-changes-btn" class="save">Guardar Cambios</button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar placas..." />
+            <button id="voice-search-btn" class="voice-search">🎤</button>
+        </div>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>PLACAS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas de datos se añadirán aquí -->
+            </tbody>
+        </table>
+        <button id="add-row-btn">Agregar Fila</button>
+        
+        <!-- Modal para mostrar placas -->
+        <div id="plates-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>Placas Guardadas</h2>
+                <ul id="plates-list">
+                    <!-- Lista de placas se añadirá aquí -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
